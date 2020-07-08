@@ -7,26 +7,25 @@ import * as alertify from 'alertifyjs';
 export class AleartifyService {
 
   constructor() { }
-  confirm (message : string,okCallback : () => any) {
+  confirm (message: string, okCallback: () => any) {
     alertify.confirm (message,(event ) => {
       if(event) {
-        okCallback()
+        okCallback();
       }
-      else 
-      {}
-    })
+      else {}
+    });
 
   }
-  success (message : string ) {
-    alertify.success(message)
+  success (message: string ) {
+    alertify.success(message);
   }
-  error (message : string ) {
-    alertify.error(message)
+  error (message: string ) {
+    alertify.error(message);
   }
-  warning (message : string ) {
-    alertify.warning(message)
+  warning (message: string ) {
+    alertify.warning(message);
   }
-  message (message : string ) {
-    alertify.message(message)
+  message (message: string ) {
+    alertify.message(message);
   }
 }
